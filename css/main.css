@@ -1,5 +1,5 @@
-@import "base.css";
-@import "partial-menu.css";
-@import "partial-hero.css";
-@import "partial-visual-list.css";
-@import "partial-callout.css";
+@import url("base.css");
+@import url("partial-menu.css");
+@import url("partial-hero.css");
+@import url("partial-visual-list.css");
+@import url("partial-callout.css");
