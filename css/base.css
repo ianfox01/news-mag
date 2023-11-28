@@ -347,7 +347,7 @@ a.content-button.secondary:hover {
     position: relative;
 }
 
-.body-container h2, h3 {
+.body-container h2, .body-container h3 {
     font-size: 2rem;
     text-align: center;
     margin: 20px 0;
