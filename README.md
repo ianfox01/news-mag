@@ -1,5 +1,6 @@
 # Newsroom/Magazine
 
 Rendered pages are available at github.io:
-* [Landing page](https://ianfox01.github.io/news-mag/landing.html)
-* [Component Demo](https://ianfox01.github.io/news-mag/kitchen-sink.html)
+* <a href="https://ianfox01.github.io/news-mag/landing.html" target="_blank">Landing Page</a>
+* <a href="https://ianfox01.github.io/news-mag/kitchen-sink.html" target="_blank">Component Demo</a>
+
