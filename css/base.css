@@ -638,14 +638,14 @@ img.round, figure.round, .round img, .rounds img {        /* use .round for a si
         margin: 10px 0 10px 10px;  
     }
 
-  .full-width.forty-sixty.stack, .full-width.sixty-forty.stack {
+  .full-width.forty-sixty.stack, .full-width.sixty-forty.stack { /* Stacks masonry on small screens */
      grid-template-columns: 1fr;
      aspect-ratio: 1/1;
     }
 
- /* reponsive typography */ 
+ /* responsive typography */ 
     .body-container p, .body-container ul {
-        font-size: .925rem;
+        font-size: 1rem;
         line-height: 1.5rem;
     }
 
