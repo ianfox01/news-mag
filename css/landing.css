@@ -1,4 +1,4 @@
-/* Override/reset for inherited body styles from base.css */
+/* Override/resest for inherited body styles from base.css */
 
 .body-container h2, .body-container h3 {
     padding: 0;
@@ -10,7 +10,7 @@
 .grid-row {
     display: grid;
     min-height: 400px;
-    grid-gap: 30px;
+    gap: 30px;
     max-width: 1200px;
     margin: 40px auto;
 }
@@ -104,12 +104,17 @@
 }
 
 .item.news h3 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 700;
+}
+
+.lead .item.news h3 {
+    font-size: 2rem;
 }
 
 .text-only .item.news h3 {
     font-size: 1.25rem;
+    font-weight: 500;
     margin: 0;
 }
 
