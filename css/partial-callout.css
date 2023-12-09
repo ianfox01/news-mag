@@ -78,7 +78,6 @@ span.icon-img {
 	    margin: 10px -20px 30px;    
 	    }
 .callout img {
-	max-height: 100vw;
 	aspect-ratio: 1.25;
 	}
 }
