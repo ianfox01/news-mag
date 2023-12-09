@@ -79,5 +79,6 @@ span.icon-img {
 	    }
 .callout img {
 	aspect-ratio: 1.25;
+	height: unset;
 	}
 }
