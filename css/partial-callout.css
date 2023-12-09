@@ -61,9 +61,9 @@ span.icon-img {
 	.callout-content h2 {
 	    font-size: 2rem;
 		}
-.callout img {
+/*.callout img {
     aspect-ratio: 1.25;
-	}
+	} */
 }	
 
 @media only screen and (max-width: 720px) {
@@ -77,7 +77,7 @@ span.icon-img {
 	    grid-template-columns: 1fr;
 	    margin: 10px -20px 30px;    
 	    }
-.callout img {
+/*.callout img {
     aspect-ratio: 1.25;
-	}		
+	}		*/
 }
