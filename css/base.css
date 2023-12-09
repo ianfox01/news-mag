@@ -546,7 +546,6 @@ a.content-button.secondary:hover {
 .in-content-image {
     max-width: 300px;
     background-color: var(--wireframe-placeholder);
-    aspect-ratio: 1; 
 }
 .in-content-image img {
     vertical-align: top;
