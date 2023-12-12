@@ -111,6 +111,16 @@ strong {
     font-weight: 600;
 }
 
+.article-tag-container {
+    border-top: 1px solid var(--light-gray);
+}
+
+.article-tag-container p.article-tags {
+    font-style: italic;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
 .body-section p.tag { /* I don't love declaring the body section class here, but I'm trying to overcome specificty issues with other partial style sheets */
     font-size: .875rem;
     font-weight: 600;
@@ -227,69 +237,6 @@ blockquote.pull-quote.quote p.attrib:before {
     left: -18px;
     position: absolute;
     background-color: var(--mid-gray)
-}
-
-/* ===== HEADER =================================== */
-
-
-.card, .cards > * {                                  /* use .card for single element; use .cards to style all children */
-    padding: 20px;
-    background: var(--lightest-gray);
-    box-shadow: 5px 5px 7px var(--light-gray);
-}
-
-.cards.grid > * {                                    /* kills additional padding for grid layout */
-    padding: 0px;
-}
-
-.shadow {
-    box-shadow: 5px 5px 12px var(--light-gray);
-}
-
-/* Zigzag Effect */
-
-.zig-zag-top-bottom {
-  --mask: 
-    conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) top/16.00px 51% repeat-x,
-    conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/16.00px 51% repeat-x;
-  -webkit-mask: var(--mask);
-          mask: var(--mask);
-}
-
-.zig-zag-top {
-  --mask: conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) 50%/16.00px 100%;
-  -webkit-mask: var(--mask);
-          mask: var(--mask);
-}
-
-.zig-zag-left {
-  --mask: conic-gradient(from 45deg at left,#0000,#000 1deg 89deg,#0000 90deg) 50%/100% 16.00px;
-  -webkit-mask: var(--mask);
-          mask: var(--mask);
-}
-
-.zig-zag-right {
-  --mask: conic-gradient(from -135deg at right,#0000,#000 1deg 89deg,#0000 90deg) 50%/100% 16.00px;
-  -webkit-mask: var(--mask);
-          mask: var(--mask);
-}
-
-.zig-zag-bottom {
-  --mask: conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/16.00px 100%;
-  -webkit-mask: var(--mask);
-          mask: var(--mask);
-}
-
-/* Color Blocks */
-/* Use with masonry grid, full-bleed background containers, callouts, or visual list cards */
-
-.color-block.gold {
-    background-color: var(--gold-solid);
-}
-
-.color-block.dark {
-    background-color: var(--glen-mist);
-    color: var(--gold-solid);
 }
 
 /* ===== HEADER =================================== */
@@ -512,7 +459,6 @@ a.content-button.secondary:hover {
 }
 
 .sidebar {
-    background: var(--light-gray-40);
     min-height: 400px;
     margin: 40px 0;
 }
@@ -575,6 +521,40 @@ a.content-button.secondary:hover {
 
 /* === UTILITIES  =================================== */
 
+/* ---Design Utilities ------------------------------ */
+
+.card, .cards > * {                                  /* use .card for single element; use .cards to style all children */
+    padding: 20px;
+    background: var(--lightest-gray);
+    box-shadow: 5px 5px 7px var(--light-gray);
+}
+
+.cards.grid > * {                                    /* kills additional padding for grid layout */
+    padding: 0px;
+}
+
+.shadow {
+    box-shadow: 5px 5px 12px var(--light-gray);
+}
+
+img.round, figure.round, .round img, .rounds img {        /* use .round for a single image; use .rounds to style children (e.g., all items in visual list) */
+    border-radius: 50%
+}
+
+/* Color Blocks */
+/* Use with masonry grid, full-bleed background containers, callouts, or visual list cards */
+
+.color-block.gold {
+    background-color: var(--gold-solid);
+}
+
+.color-block.dark {
+    background-color: var(--glen-mist);
+    color: var(--gold-solid);
+}
+
+/* --- Layout Override Utilities ------------------------------ */
+
 .in-content-image.reduce-200 {
     max-width: 200px;
 }
@@ -582,10 +562,6 @@ a.content-button.secondary:hover {
 .gutter-xwide {
     margin-left: 30px;
     margin-right: 30px;
-}
-
-img.round, figure.round, .round img, .rounds img {        /* use .round for a single image; use .rounds to style children (e.g., all items in visual list) */
-    border-radius: 50%
 }
 
 .shim-padding-20 {
@@ -627,8 +603,8 @@ img.round, figure.round, .round img, .rounds img {        /* use .round for a si
 @media only screen and (max-width: 500px) {
     .full-width {
         margin-bottom: 10px;
-        gap: 10px;
     }
+
     .in-content-image.left {
         margin: 10px 20px 10px 0;
     }
@@ -645,7 +621,7 @@ img.round, figure.round, .round img, .rounds img {        /* use .round for a si
  /* responsive typography */ 
     .body-container p, .body-container ul {
         font-size: 1rem;
-        line-height: 1.625rem;
+        line-height: 1.5rem;
     }
 
     .body-container h2 {
