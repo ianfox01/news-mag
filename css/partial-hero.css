@@ -9,11 +9,18 @@
     display: grid;
 }
 
-/* this declaration needs cleanup */
-
 .hero-image {
     background: var(--tiger-placeholder-xl);
-    background-position-y: center;
+}
+
+.hero-image figure img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 650px;
+}
+
+.hero.alt .hero-image figure img {
+    aspect-ratio: 1;
 }
 
 .hero-image:not(.hero.alt .hero-image, .hero.simple .hero-image) {
@@ -111,6 +118,10 @@
     max-width: calc( 100% + 50px);    
 }
 
+.hero.alt .subhead, .hero.alt .byline-container {
+    padding-left: 50px;
+}
+
 /* ===== MEDIA QUERIES  =================================== */
 
 @media only screen and (max-width: 960px) {
@@ -147,4 +158,7 @@
         margin-top: -80px;
         margin-left: 20px;
   }
+    .hero.alt .subhead, .hero.alt .byline-container {
+        padding-left: unset;
+    } 
 }
