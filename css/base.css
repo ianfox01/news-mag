@@ -14,12 +14,18 @@
     --gold-50: #ffbb0050;
     --white: #fff;
     --white-80: #ffffff80;
-    --glen-mist: #3c3c3c;   
-    --glen-mist-80: #3c3c3c80;
-    --glen-mist-50: #3c3c3c50;
-    --accent-torquise: #5abbc3;
-    --accent-torquise-80: #5abbc380;
-    --accent-torquise-50: #5abbc350;
+    --graphite: #3c3c3c;   
+    --graphite-80: #3c3c3c80;
+    --graphite-50: #3c3c3c50;
+    --glen-mist: #ddd;   
+    --glen-mist-80: #dddddd80;
+    --glen-mist-50: #dddddd50;
+    --accent-torquoise: #5abbc3;
+    --accent-torquoise-80: #5abbc380;
+    --accent-torquoise-50: #5abbc350;
+    --accent-red: #eb5f33;
+    --accent-red-80: #eb5f3380;
+    --accent-red-50: #eb5f3350;        
 /* wireframe colors */
     --lightest-gray: #f7f7f7;
     --light-gray-40: #cccccc40;
@@ -153,7 +159,7 @@ strong {
     position: relative;
     color: var(--lightest-gray);
     -webkit-text-stroke: 1px black;
-    text-shadow: 1px 1px 1px var(--glen-mist);    
+    text-shadow: 1px 1px 1px var(--graphite);    
 }
 
 .intro-text {
@@ -306,7 +312,7 @@ a.content-button.secondary:hover {
     font-size: 1.625rem;
 }
 
-.body-container p, .body-container ul {
+.body-container p, .body-container ul, .body-container ol, .body-container dl {
     font-size: 1.125rem;
     line-height: 1.75rem;
     margin-top: 20px;
@@ -549,7 +555,7 @@ img.round, figure.round, .round img, .rounds img {        /* use .round for a si
 }
 
 .color-block.dark {
-    background-color: var(--glen-mist);
+    background-color: var(--graphite);
     color: var(--gold-solid);
 }
 
