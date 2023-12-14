@@ -1,0 +1,21 @@
+.content-highlight {
+	margin: 20px 0;
+}
+
+.content-highlight .name-value-pair .data-group dt {
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+.content-highlight .name-value-pair .data-group:not(:last-of-type) {
+	border-bottom: 1px dotted var(--graphite-80)
+}
+
+.content-highlight .data-group {
+	padding: 30px 0;
+}
+
+.content-highlight .name-value-pair .data-group dt i {
+	padding-right: 7px;
+}
