@@ -76,11 +76,13 @@
     text-transform: uppercase;
     letter-spacing: .25rem;
     padding: 0 10px;
-    display: inline-block
+    display: inline-block;
+    text-align: center;
 }
 
 p.vertical-name {
-    border-top: 5px solid var(--gold-solid);    
+    border-top: 5px solid var(--gold-solid);
+    width: 160px;
 }
 
 .heading-constrain.nav-flex-wrap {
@@ -111,7 +113,7 @@ ul.nav-items li:hover {
     background: var(--gold-solid);
     top: -5px;
     position: relative;
-    left: -10px;
+    left: -5px;
 }
 
 .vertical-issue p {
@@ -126,8 +128,83 @@ ul.nav-items li:hover {
 
 /* Stripe Background: https://stripesgenerator.com */
 
-.stripe.gray {
+.stripe.glen-mist {
     background-image: linear-gradient(34deg, #eeeeee 10%, var(--glen-mist) 10%, var(--glen-mist) 50%, #eeeeee 50%, #eeeeee 60%, var(--glen-mist) 60%, var(--glen-mist) 100%);
     background-size: 8.94px 6.03px;
+    }
+
+.stripe.graphite {
+    background-image: linear-gradient(34deg, #222222 10%, var(--graphite) 10%, var(--graphite) 50%, #222222 50%, #222222 60%, var(--graphite) 60%, var(--graphite) 100%);
+    background-size: 8.94px 6.03px;
+    }
+
+.stripe.white {
+    background-image: linear-gradient(35deg, #ededed 10%, #fbfbfb 10%, #fbfbfb 50%, #ededed 50%, #ededed 60%, #fbfbfb 60%, #fbfbfb 100%);
+    background-size: 8.72px 6.10px;
 }
 
+ .stripe.graphite ul.nav-items li {
+    color: #eee;
+}
+
+ .stripe.graphite ul.nav-items li:hover{
+    color: #000;
+}
+
+
+/* Header Alt */
+
+.alt .masthead-logo-container {
+    background: unset;
+}
+
+.alt .vertical-id {
+    display: flex;
+    position:relative;
+}
+
+.alt p.vertical-name {
+    border: none;
+    font-size: 2.5rem;
+    align-self: center;
+    color: #fff;
+    margin-top: 20px;
+    text-align: unset;
+    width: unset;
+}
+
+.alt .vertical-issue {
+    height: min-content;
+    align-self: flex-end;
+    top: 15px;
+    left: -134px;
+}
+
+.alt .masthead-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.alt .vertical-id:before { 
+  content: '';
+  height: 75%;
+  width: 1px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+}
+
+.alt ul.nav-items li {
+    color: #eee;
+    top: 33px;
+}
+
+.alt ul.nav-items li:hover {
+    color: #000;
+}
+
+.alt .stripe {
+background-image: linear-gradient(34deg, #222222 10%, var(--graphite) 10%, var(--graphite) 50%, #222222 50%, #222222 60%, var(--graphite) 60%, var(--graphite) 100%);
+background-size: 8.94px 6.03px;
+    }
