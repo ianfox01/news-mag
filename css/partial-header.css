@@ -203,24 +203,26 @@ button.search i {
 
 .alt .vertical-id {
     display: flex;
-    position:relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+
 }
 
 .alt p.vertical-name {
     border: none;
     font-size: 2.5rem;
-    align-self: center;
     color: #fff;
-    margin-top: 20px;
-    text-align: unset;
-    width: unset;
+    position: relative;
+    top: 10px;
+    width: min-content;    
+    padding: 0 0 0 20px;
 }
 
 .alt .vertical-issue {
     height: min-content;
     align-self: flex-end;
     top: 15px;
-    left: -134px;
 }
 
 .alt .masthead-container {
