@@ -9,6 +9,8 @@
     position: relative;
 }
 
+/* Dogear accent */
+
 .global-header:after {
     content: '';
     background: #000;
@@ -21,7 +23,7 @@
     height: 54px;
 }
 
-/* Utility Nav */
+/* ===== PRE-HEADER / UTILITY NAV ==================== */
 
 .utility-nav {
     height: 40px;
@@ -57,12 +59,12 @@
     padding-right: 0;
 }
 
-/* Masthead */
+/* ===== MASTHEAD ==================== */
 
 .heading-constrain {
     max-width: 1200px;
     margin: auto;
-    width: 100%;
+    width: calc(100% - 30px);
 }
 
 .masthead-logo-container svg {
@@ -83,20 +85,39 @@
     position: relative;
 }
 
+/* Vertical Identifier */
+
+.vertical-id {
+    display: flex;
+}
+
 .vertical-id p {
     font-weight: 700;
     font-size: 1.4rem;
     text-transform: uppercase;
     letter-spacing: .25rem;
     padding: 0 10px;
-    display: inline-block;
     text-align: center;
+    border-top: 5px solid var(--gold-solid);
+    width: 160px;    
 }
 
-p.vertical-name {
-    border-top: 5px solid var(--gold-solid);
-    width: 160px;
+.vertical-issue {
+    background: var(--gold-solid);
+    top: -5px;
+    position: relative;
+    left: -5px;
 }
+
+.vertical-issue p {
+    font-size: 1rem;
+    letter-spacing: .025rem;
+    padding: 6px 10px;
+    position: relative;
+    font-weight: 600;
+}
+
+/* Main Nav */
 
 .heading-constrain.nav-flex-wrap {
     display: flex;
@@ -131,29 +152,10 @@ ul.nav-items li:hover {
     border-bottom: 5px solid var(--gold-solid);
 }
 
-.vertical-issue {
-    display: inline-block;
-    background: var(--gold-solid);
-    top: -5px;
-    position: relative;
-    left: -5px;
-}
-
-.vertical-issue p {
-    display: inline-block;
-    font-size: 1rem;
-    letter-spacing: .025rem;
-    padding: 6px 10px;
-    top: 2px;
-    position: relative;
-    font-weight: 600;
-}
-
-
 /* Search Button */
 
 button.search {
-    /* border-bottom: 1px solid #fb0; */
+    /* border-bottom: 1px solid var(--gold-solid); */
     display: inline-flex;
     margin: 20px;
     width: min-content;
@@ -195,7 +197,7 @@ button.search i {
     color: #000;
 }
 
-/* Header Alt */
+/* ===== ALTERNATIVE HEADING STYLES ==================== */
 
 .alt .masthead-logo-container {
     background: unset;
@@ -206,7 +208,6 @@ button.search i {
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
-
 }
 
 .alt p.vertical-name {
@@ -254,5 +255,54 @@ background-size: 8.94px 6.03px;
     }
 
 .alt button.search {
-    color: #fb0;
+    color: var(--gold-solid);
+}
+
+
+/* MOCKUP PROPERTIES FOR SMALL SCREENS
+// These styles are a rough representation of how we want things to LOOK on mobile.
+// A lot this CSS is for demo only and will need to be redone to fit neatly into the codebase. */
+
+@media only screen and (max-width: 720px) {
+    .nav-container, ul.publication-items {
+        display: none;
+    }
+    .global-header {
+        height: 80px;
+    }
+    .masthead-logo-container {
+        width: 120px;
+        height: 80px;    
+    }
+    .vertical-id p {
+        width: 120px;
+    }
+    .masthead-logo-container svg {
+        padding: 16px 20px 20px 12px;
+    }
+    .vertical-id p {
+        font-size: 1.125rem !important; /* only used here to override the inline CSS on this demo page. */
+        letter-spacing: .0625rem !important;/* only used here to override the inline CSS on this demo page. */
+        padding: 0 5px;
+    }
+    .global-header:after {
+        right: -38px;;
+    }
+}
+
+@media only screen and (min-width: 721px) {
+    .mobile-menu-icon-container {
+        display: none;
+    }
+}
+
+.mobile-menu-icon-container {
+        margin: -20px 10px 0 0;
+}
+
+.mobile-menu-icon-container .icon {
+        font-size: 2rem;
+        margin-right: 15px;
+    }
+
 }
