@@ -263,7 +263,7 @@ background-size: 8.94px 6.03px;
 // These styles are a rough representation of how we want things to LOOK on mobile.
 // A lot this CSS is for demo only and will need to be redone to fit neatly into the codebase. */
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 960px) {
     .nav-container, ul.publication-items {
         display: none;
     }
@@ -290,7 +290,7 @@ background-size: 8.94px 6.03px;
     }
 }
 
-@media only screen and (min-width: 721px) {
+@media only screen and (min-width: 961px) {
     .mobile-menu-icon-container {
         display: none;
     }
@@ -304,5 +304,4 @@ background-size: 8.94px 6.03px;
         font-size: 2rem;
         margin-right: 15px;
     }
-
 }
