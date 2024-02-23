@@ -273,7 +273,8 @@ background-size: 8.94px 6.03px;
     }
     .masthead-logo-container {
         width: 120px;
-        height: 80px;    
+        height: 80px;
+        background: linear-gradient(213.4deg,transparent 20px,#000 20px); 
     }
     .vertical-id p {
         width: 120px;
@@ -302,8 +303,41 @@ background-size: 8.94px 6.03px;
 }
 
 .mobile-menu-icon-container .icon {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-right: 15px;
     }
 
+
+@media only screen and (max-width: 500px) {
+    .nav-container, ul.publication-items {
+        display: none;
+    }
+    .global-header {
+        height: 60px;
+    }
+    .masthead-logo-container {
+        width: 90px;
+        height: 60px;
+        background: linear-gradient(213.4deg,transparent 15px,#000 15px);    
+    }
+    .vertical-id p {
+        width: 90px;
+    }
+    .masthead-logo-container svg {
+        padding: 12px 15px 15px 8px;
+    }
+    .vertical-id p {
+        font-size: .85rem !important; /* only used here to override the inline CSS on this demo page. */
+        letter-spacing: .025rem !important;/* only used here to override the inline CSS on this demo page. */
+        padding: 0 5px;
+    }
+    .global-header:after {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 961px) {
+    .mobile-menu-icon-container {
+        display: none;
+    }
 }
