@@ -50,6 +50,7 @@
 			</div>
 		</div>
 		<div class="grid-row two">
+			<a href="https://www.google.com">
 			<div class="item news">
 				<figure>
 					<img src="https://www.towson.edu/homepage/2022-homepage/fall-tiger-admissions-deadlines-jumbo.jpg">
@@ -60,6 +61,8 @@
 				<p>Ullamcorper eget nulla facilisi etiam. Etiam non quam lacus suspendisse faucibus interdum posuere. </p>
 				</div>
 			</div>
+			</a>
+			<a href="https://www.google.com">
 			<div class="item news">
 				<figure>
 					<img src="https://www.towson.edu/homepage/2022-homepage/fall-tiger-admissions-deadlines-jumbo.jpg">
@@ -70,6 +73,7 @@
 				<p>Libero id faucibus nisl tincidunt. Purus in massa tempor nec feugiat nisl. </p>
 				</div>
 			</div>
+			</a>
 		</div>
 		<div class="grid-row four">
 			<div class="item text-block top-border">
